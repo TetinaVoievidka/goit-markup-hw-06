@@ -615,7 +615,6 @@ button {
 }
 
 .overlay {
-	position: relative;
 	overflow: hidden;
 }
 .card {
@@ -695,13 +694,18 @@ button {
 	flex-direction: column;
 }
 .inputs-name {
-	padding-top: 8px;
-	padding-bottom: 4px;
+	position: relative;
+	margin-top: 8px;
+	margin-bottom: 4px;
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 1.17;
 	letter-spacing: 0.04em;
 	color: #8e8f99;
+}
+.inputs-name-span{
+	display: block;
+	margin-bottom: 4px;
 }
 .contact-form-input {
 	width: 100%;
@@ -787,8 +791,8 @@ button {
 }
 .icon-person {
 	position: absolute;
-	top: 141px;
-	left: 40px;
+	top: 26px;
+	left: 16px;
 	width: 18px;
 	height: 18px;
 	transition-property: fill;
@@ -797,33 +801,32 @@ button {
 }
 .icon-tel {
 	position: absolute;
-	left: 40px;
-	top: 204px;
+	top: 26px;
+	left: 16px;
 	transition-property: fill;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-mail {
 	position: absolute;
-	left: 40px;
-	top: 270px;
+	top: 26px;
+	left: 16px;
 	transition-property: fill;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.subscribe{
+.subscribe {
 	margin-left: 80px;
 }
-.subscribe-form{
+.subscribe-form {
 	display: flex;
-	
 }
 .subscribe-tit {
 	padding-bottom: 16px;
-	color: #FFFFFF;
+	color: #ffffff;
 	font-weight: 500;
-		font-size: 16px;
-		line-height: 1.5;
+	font-size: 16px;
+	line-height: 1.5;
 }
 
 .subscribe-input {
@@ -832,34 +835,36 @@ button {
 	outline: none;
 	padding-left: 16px;
 	background-color: transparent;
-	border: 1px solid #FFFFFF;
-		border-radius: 4px;
+	border: 1px solid #ffffff;
+	border-radius: 4px;
 }
 .subscribe-input::placeholder {
-    font-weight: 400;
+	font-weight: 400;
 	font-size: 12px;
 	line-height: 2;
-	color:#FFFFFF;
+	color: #ffffff;
 }
 .subscribe-btn {
 	width: 165px;
-
-	text-align: center;
+	height: 40px;
+	display: flex;
 	font-weight: 500;
 	font-size: 16px;
-    line-height: 1.5;
-    padding: 8px 24px 8px 24px;
+	line-height: 1.5;
+	padding: 8px 24px 8px 24px;
 	margin-left: 24px;
 	border: none;
 	color: #ffffff;
-	background: #4d5ae5;
+	background: var(--logo);
 	border-radius: 4px;
 	transition-property: background;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .subscribe-btn:hover,
 .subscribe-btn:focus {
 	background-color: var(--active-nav);
+}
+.subscribe-icon {
+	margin-left: 16px;
 }
