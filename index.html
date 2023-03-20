@@ -288,14 +288,14 @@
                 <h2 class="sec-four-title">Customers</h2>
                 <ul class="sec-four-list">
                     <li class="sec-four-item">
-                        <a href="" class="sec-four-link"> 
+                        <a href="" class="sec-four-link">
                             <svg class="sec-four-icon" width="104" height="56">
                                 <use href="./images/icons.svg#icon-1">
                                 </use>
                             </svg></a>
                     </li>
                     <li class="sec-four-item">
-                        <a href="" class="sec-four-link"> 
+                        <a href="" class="sec-four-link">
                             <svg class="sec-four-icon" width="104" height="56">
                                 <use href="./images/icons.svg#icon-2">
                                 </use>
@@ -376,19 +376,66 @@
                     </li>
                 </ul>
             </div>
+            <div class="subscribe">
+                <p class="subscribe-tit">Subscribe</p>
+                <form class="subscribe-form">
+                    <input 
+                    name="email" 
+                    type="email" 
+                    class="subscribe-input" 
+                     placeholder="E-mail"
+                     required>
+                    <button type="submit" class="subscribe-btn">Subscribe<svg class="subscribe-icon" width="24" heigh="24">
+                        <use href="./images/icons.svg#subscribe"></use>
+                    </svg></button></form>
+            </div>
         </div>
     </footer>
 
     <!-- Modal  -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-        <button data-modal-close type="button" class="modal-close">
-            <svg class="modal-btn-close" width="8" height="8" >
-                <use href="./images/icons.svg#x"></use>
-            </svg>
-        </button>
+            <button data-modal-close type="button" class="modal-close">
+                <svg class="modal-btn-close" width="8" height="8">
+                    <use href="./images/icons.svg#x"></use>
+                </svg>
+            </button>
+            <p class="modal-title">Leave your contacts and we will call you back</p>
+            <form class="modal-form">
+                <label class="inputs-name" for="">Name</label>
+                <input name="name" type="text" class="contact-form-input" required>
+                <svg class="icon-person" width="18" height="18">
+                    <use href="./images/icons.svg#person"></use>
+                </svg>
+                <label class="inputs-name" for="">Phone</label>
+                <input name="tel" type="tel" class="contact-form-input" required>
+                <svg class="icon-tel" width="18" height="24">
+                    <use href="./images/icons.svg#tel"></use>
+                </svg>
+
+                <label class="inputs-name" for="">Email</label>
+                <input name="email" type="email" class="contact-form-input" required>
+                <svg class="icon-mail" width="18" height="24">
+                    <use href="./images/icons.svg#mail"></use>
+                </svg>
+
+
+
+                <label class="inputs-name" for="">Comment</label>
+                <textarea placeholder="Text input" name="comment" class="contact-form-comment"></textarea>
+
+
+                <input name="check" id="user-check" type="checkbox" class="modal-form-check visually-hidden">
+
+
+                <label for="user-check" class="modal-form-check-desc">&nbsp;&nbsp;I accept the terms and conditions of
+                    the&nbsp;<u><a href="">Privacy Policy</a></u></label>
+
+                <button type="submit" class="modal-btn-send">Send</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
 </body>
+
 </html>
